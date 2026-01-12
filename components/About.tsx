@@ -3,7 +3,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative px-4 md:px-12 py-20 bg-white"
+      className="relative px-4 md:px-12 py-20  bg-white"
     >
       <div className="mx-auto max-w-7xl w-full">
 

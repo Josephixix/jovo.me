@@ -13,6 +13,9 @@ export default function Projects() {
           <h3 className="text-xl sm:text-2xl font-bold text-gray-700 mb-6">
             Designs & Projects
           </h3>
+          <p className="text-gray-600 text-sm sm:text-lg font-semibold">
+            Here are some of my recent designs. 
+          </p>
           
         </div>
 
@@ -44,7 +47,7 @@ export default function Projects() {
        {/* Bottom Text + Button */}
 <div className="flex flex-col items-start gap-2 mt-6">
   <h3 className="text-gray-700 font-semibold text-sm sm:text-lg">
-    View my projects on GitHub
+    View my projects and designs on GitHub
   </h3>
   <a
     href="https://github.com/josephixix"
@@ -53,7 +56,7 @@ export default function Projects() {
     className="
       inline-flex items-center justify-center
       rounded-full 
-      px-4 py-1
+      px-5 py-2
       text-sm font-semibold text-white
       hover:bg-gray-900 transition
       bg-black
