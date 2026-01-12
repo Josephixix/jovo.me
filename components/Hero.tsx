@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section 
     id="home"
-    className="relative min-h-[70dvh] md:min-h-[80dvh] lg:min-h-[90dvh] overflow-hidden flex flex-col items-center px-4 md:px-12 bg-gray-50 pt-10 md:pt-32  mt-0 ">
+    className="relative min-h-[78dvh] md:min-h-[80dvh] lg:min-h-[90dvh] overflow-hidden flex flex-col items-center px-4 md:px-12 bg-gray-50 pt-15 md:pt-32  mt-0 ">
       
 
       
