@@ -1,6 +1,12 @@
 import Image from "next/image"
 
 const projects = [
+  
+  {
+    image: "/projects5.png",
+    live: "https://to-dos-list-beige.vercel.app/",
+  },
+  
   {
     image: "/x1.png",
     live: "https://soft-skin.vercel.app/",
@@ -8,10 +14,6 @@ const projects = [
   {
     image: "/project4.png",
     live: "https://farmgate-beryl.vercel.app/",
-  },
-  {
-    image: "/projects5.png",
-    live: "https://to-dos-list-beige.vercel.app/",
   },
 ]
 
