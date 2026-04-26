@@ -8,8 +8,8 @@ const projects = [
   },
   
   {
-    image: "/x1.png",
-    live: "https://soft-skin.vercel.app/",
+    image: "/news.png",
+    live: "https://news-ng.vercel.app/",
   },
   {
     image: "/project4.png",
