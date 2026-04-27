@@ -3,7 +3,7 @@ import Image from "next/image"
 const projects = [
   
   {
-    image: "/projects5.png",
+    image: "/todos.png",
     live: "https://to-dos-list-beige.vercel.app/",
   },
   
