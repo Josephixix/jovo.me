@@ -1,19 +1,26 @@
 import Image from "next/image"
 
 const projects = [
-  
   {
+    title: "TaskFlow – To-Do App",
+    description: "A clean productivity app for managing daily tasks with real-time storage and secure authentication.",
+    tech: ["Next.js", "Firebase", "Clerk", "Tailwind"],
     image: "/todos2.png",
     live: "https://to-dos-list-beige.vercel.app/",
   },
-  
   {
-    image: "/news.png",
-    live: "https://news-ng.vercel.app/",
+    title: "WhisperLink – Anonymous Messaging",
+    description: "A platform where users receive anonymous messages through a shareable personal link.",
+    tech: ["Next.js", "Convex", "Clerk", "Tailwind"],
+    image: "/blk.png",
+    live: "https://chattty-drab.vercel.app/",
   },
   {
-    image: "/project4.png",
-    live: "https://farmgate-beryl.vercel.app/",
+    title: "NewsSphere – News Aggregator",
+    description: "A news blog that aggregates and displays real-time headlines from multiple news APIs.",
+    tech: ["Next.js", "NestJS", "REST APIs", "Tailwind"],
+    image: "/news.png",
+    live: "https://news-ng.vercel.app/",
   },
 ]
 
@@ -28,10 +35,10 @@ export default function Projects() {
         {/* Section Header */}
         <div>
           <h3 className="text-xl sm:text-2xl font-bold text-gray-700 mb-4">
-            Designs & Projects
+            Projects
           </h3>
           <p className="text-gray-600 text-sm sm:text-lg font-semibold">
-            Here are some of my recent designs.
+            Selected work showcasing my full-stack development skills.
           </p>
         </div>
 
@@ -43,30 +50,40 @@ export default function Projects() {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                block
-                bg-gray-100
-                rounded-xl
-                border border-gray-200
-                p-3
-                transition
-                hover:-translate-y-1
-              "
+              className="group block bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition"
             >
               {/* Image */}
-              <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+              <div className="relative aspect-video w-full overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={`Website project ${index + 1}`}
+                  alt={project.title}
                   fill
                   priority={index === 0}
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="
-                    object-contain
-                    transition-transform duration-500
-                    group-hover:scale-105
-                  "
+                  className="object-cover group-hover:scale-105 transition duration-500"
                 />
+              </div>
+
+              {/* Content */}
+              <div className="p-4 flex flex-col gap-3">
+                <h4 className="text-lg font-semibold text-gray-800">
+                  {project.title}
+                </h4>
+
+                <p className="text-sm text-gray-600">
+                  {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {project.tech.map((item, i) => (
+                    <span
+                      key={i}
+                      className="text-xs font-medium bg-gray-100 text-gray-700 px-2 py-1 rounded-md"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </a>
           ))}
@@ -75,33 +92,15 @@ export default function Projects() {
         {/* Bottom CTA */}
         <div className="flex flex-col items-start gap-3 mt-6">
           <h3 className="text-gray-700 font-semibold text-sm sm:text-lg">
-            View my projects and designs on GitHub
+            View more on GitHub
           </h3>
 
           <a
             href="https://github.com/josephixix"
             target="_blank"
             rel="noopener noreferrer"
-            className="
-              inline-flex items-center gap-2
-              rounded-full
-              px-5 py-2.5
-              text-sm font-semibold
-              text-white
-              bg-black
-              hover:bg-gray-900
-              transition
-            "
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white bg-black hover:bg-gray-900 transition"
           >
-            {/* GitHub Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-4 h-4"
-            >
-              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.87 10.96.58.11.79-.25.79-.56v-2.05c-3.2.7-3.87-1.57-3.87-1.57-.52-1.33-1.27-1.68-1.27-1.68-1.03-.7.08-.68.08-.68 1.14.08 1.74 1.18 1.74 1.18 1.01 1.73 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.51-2.56-.3-5.26-1.29-5.26-5.74 0-1.27.45-2.3 1.18-3.11-.12-.3-.51-1.52.11-3.17 0 0 .96-.31 3.15 1.19a10.88 10.88 0 015.74 0c2.18-1.5 3.14-1.19 3.14-1.19.62 1.65.23 2.87.11 3.17.73.81 1.18 1.84 1.18 3.11 0 4.46-2.7 5.44-5.27 5.72.41.35.77 1.03.77 2.08v3.09c0 .31.21.67.8.56A10.52 10.52 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
-            </svg>
             GitHub
           </a>
         </div>
