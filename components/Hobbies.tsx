@@ -8,12 +8,20 @@ const hobbies = [
     icon: "🎮",
     title: "Hobbyist Game Dev",
     description:
-      "I build small games for the joy of it — mechanics, mood, and pixel-perfect chaos. Currently experimenting with Godot and love-driven side projects.",
-    image: "/gamedev.png", // replace with your actual game screenshot
+      "I build small games for the joy of it. Currently experimenting with Godot and love-driven side projects.",
+    image: "/CZw0Ok.png",
     link: "https://jovothedev.itch.io/",
     linkLabel: "Play on itch.io",
   },
- 
+  {
+    icon: "🎥",
+    title: "YouTube Channel",
+    description:
+      "I document my work and what I'm building, from dev logs to project breakdowns, so you can follow along with the process.",
+    image: "/thumbnail.png",
+    link: "https://www.youtube.com/@jovothedev",
+    linkLabel: "Watch on YouTube",
+  },
 ]
 
 export default function Hobbies() {
@@ -44,7 +52,7 @@ export default function Hobbies() {
           {hobbies.map((hobby, index) => (
             <motion.div
               key={hobby.title}
-              className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition flex flex-col"
+              className="group bg-gray-200 rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

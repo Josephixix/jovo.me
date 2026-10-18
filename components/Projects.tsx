@@ -15,13 +15,6 @@ const projects = [
     image: "/blk.png",
     live: "https://chattty-drab.vercel.app/",
   },
-  {
-    title: "NewsSphere – News Aggregator",
-    description: "A news blog that aggregates and displays real-time headlines from multiple news APIs.",
-    tech: ["Next.js", "NestJS", "REST APIs", "Tailwind"],
-    image: "/news.png",
-    live: "https://news-ng.vercel.app/",
-  },
 ]
 
 export default function Projects() {
